@@ -17,6 +17,9 @@ where `view` is the SOXColorFromPointImageView instance;
 and `color` is the color retrieved from `point`
 SOXColorImageView will call this delegate whenever the user touches on any point of the image.
 
+![alt tag](https://github.com/spagosx/ColorFromPointImageView/blob/master/SOXColorFromPointView/screenshot.png)
+
+Image courtesy of: <a href="https://www.flickr.com/photos/_dchris/" TARGET="_blank">_dchris</a>
 
 
 
