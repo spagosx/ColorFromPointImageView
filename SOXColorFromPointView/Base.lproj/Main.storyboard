@@ -1,25 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="ee3-dk-hGp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ag3-3Y-Sss"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="phR-Hv-Hsu" customClass="SOXColorFromPointImageView">
+                                <rect key="frame" x="0.0" y="86" width="600" height="514"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7c8-ev-Bvb" userLabel="color well">
+                                <rect key="frame" x="10" y="28" width="580" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ag3-3Y-Sss" firstAttribute="top" secondItem="phR-Hv-Hsu" secondAttribute="bottom" id="5uI-hQ-cQt"/>
+                            <constraint firstAttribute="trailing" secondItem="phR-Hv-Hsu" secondAttribute="trailing" id="7mf-VC-EO4"/>
+                            <constraint firstItem="phR-Hv-Hsu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Hzo-5O-s0T"/>
+                            <constraint firstItem="7c8-ev-Bvb" firstAttribute="top" secondItem="ee3-dk-hGp" secondAttribute="bottom" constant="8" id="Jq7-6g-7Ks"/>
+                            <constraint firstItem="phR-Hv-Hsu" firstAttribute="top" secondItem="7c8-ev-Bvb" secondAttribute="bottom" constant="8" id="PpN-Um-M7l"/>
+                            <constraint firstAttribute="trailing" secondItem="7c8-ev-Bvb" secondAttribute="trailing" constant="10" id="ZKW-sb-nRy"/>
+                            <constraint firstItem="phR-Hv-Hsu" firstAttribute="top" secondItem="ee3-dk-hGp" secondAttribute="bottom" constant="66" id="kCm-vZ-4AZ"/>
+                            <constraint firstItem="7c8-ev-Bvb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="nvA-y4-t0P"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorWell" destination="7c8-ev-Bvb" id="dpW-cl-Lz3"/>
+                        <outlet property="imageView" destination="phR-Hv-Hsu" id="iiM-mp-CyI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="266" y="402"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image.jpg" width="1024" height="683"/>
+    </resources>
 </document>

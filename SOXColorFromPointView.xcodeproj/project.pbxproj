@@ -14,6 +14,8 @@
 		A7E759DC1A02D42A00331359 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E759DB1A02D42A00331359 /* Images.xcassets */; };
 		A7E759DF1A02D42A00331359 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E759DD1A02D42A00331359 /* LaunchScreen.xib */; };
 		A7E759EB1A02D42A00331359 /* SOXColorFromPointViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E759EA1A02D42A00331359 /* SOXColorFromPointViewTests.m */; };
+		A7E759F61A02D46C00331359 /* SOXColorFromPointImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E759F51A02D46C00331359 /* SOXColorFromPointImageView.m */; };
+		A7E759F81A02E3F100331359 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7E759F71A02E3F100331359 /* image.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		A7E759E41A02D42A00331359 /* SOXColorFromPointViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOXColorFromPointViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E759E91A02D42A00331359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7E759EA1A02D42A00331359 /* SOXColorFromPointViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOXColorFromPointViewTests.m; sourceTree = "<group>"; };
+		A7E759F41A02D46C00331359 /* SOXColorFromPointImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOXColorFromPointImageView.h; sourceTree = "<group>"; };
+		A7E759F51A02D46C00331359 /* SOXColorFromPointImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOXColorFromPointImageView.m; sourceTree = "<group>"; };
+		A7E759F71A02E3F100331359 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,9 @@
 				A7E759D51A02D42A00331359 /* ViewController.h */,
 				A7E759D61A02D42A00331359 /* ViewController.m */,
 				A7E759D81A02D42A00331359 /* Main.storyboard */,
+				A7E759F41A02D46C00331359 /* SOXColorFromPointImageView.h */,
+				A7E759F51A02D46C00331359 /* SOXColorFromPointImageView.m */,
+				A7E759F71A02E3F100331359 /* image.jpg */,
 				A7E759DB1A02D42A00331359 /* Images.xcassets */,
 				A7E759DD1A02D42A00331359 /* LaunchScreen.xib */,
 				A7E759CE1A02D42A00331359 /* Supporting Files */,
@@ -202,6 +210,7 @@
 				A7E759DA1A02D42A00331359 /* Main.storyboard in Resources */,
 				A7E759DF1A02D42A00331359 /* LaunchScreen.xib in Resources */,
 				A7E759DC1A02D42A00331359 /* Images.xcassets in Resources */,
+				A7E759F81A02E3F100331359 /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E759F61A02D46C00331359 /* SOXColorFromPointImageView.m in Sources */,
 				A7E759D71A02D42A00331359 /* ViewController.m in Sources */,
 				A7E759D41A02D42A00331359 /* AppDelegate.m in Sources */,
 				A7E759D11A02D42A00331359 /* main.m in Sources */,
